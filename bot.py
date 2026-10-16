@@ -33,7 +33,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
             reply_markup=reply_markup
         )
     else:
-        with open("video.mp4.mov", "rb") as video_file:
+        with open("video.mp4.MOV", "rb") as video_file:
             msg = await context.bot.send_video(
                 chat_id=chat_id,
                 video=video_file,
